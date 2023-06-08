@@ -199,7 +199,7 @@ export const playBetting = async (bettingAmount, boxCount, selectedIndex) => {
       await new Promise((resolve) => setTimeout(resolve, 5000));
       await axios
         .post(`${BACKEND_API_URL}/PlayHistory/askwinning`, {
-          account: store.getState().auth.hederaWallet,
+          account: store.auth.hederaWallet,
         })
         .then((response) => {
           console.log(response);

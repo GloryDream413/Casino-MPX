@@ -29,7 +29,6 @@ const Header = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const chain = useSelector((state) => state.auth.currentChainId);
-  console.log (chain, "<<<<<<<<<<<<<<<<<<<")
   const connected = useSelector((state) => state.auth.walletStatus);
   const connectedHedera = useSelector((state) => state.auth.hederaWalletStatus);
   const walletAddr = useSelector((state) => state.auth.currentWallet);
@@ -224,14 +223,9 @@ const Header = () => {
                         ? shortWalletAddr(hederaWalletAddr, strLen)
                         : DEFAULT_BUTSTR
                     }
-                    onClick={async () => {
-                      if(connectedHedera == false) 
-                      {
-                        hc.connectToLocalWallet()
-                      }
-                      else {
-                        await hc.disconnect(hc.hcData.topic);
-                      }
+                    onClick={() => {
+                      if(connectedHedera === false) hc.connectToLocalWallet()
+                      else hc.disconnect(hc.hcData.topic);
                     }}
                   />
                 )}
@@ -294,16 +288,9 @@ const Header = () => {
                       ? shortWalletAddr(hederaWalletAddr, strLen)
                       : DEFAULT_BUTSTR
                   }
-                  onClick={async () => { 
-                    if(connectedHedera == false) 
-                    {
-                      // hc.connectToLocalWallet()
-                    }
-                      else {
-                        // await hc.disconnect(hc.hcData.topic);
-                      }
-                    }
-                  }
+                  onClick={() => { 
+                    if(connectedHedera === false) hc.connectToLocalWallet()
+                      else hc.disconnect(hc.hcData.topic);}}
                 />
               
             </>

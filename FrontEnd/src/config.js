@@ -1,5 +1,4 @@
-//export const BACKEND_API_URL = "https://pmxgaming.link/api";
-export const BACKEND_API_URL = "https://65.108.142.188:5001/api";
+export const BACKEND_API_URL = "https://pmxgaming.link/api";
 
 export const CONTRACT_ID = "0.0.2121987";
 export const TREASURY_ID = "0.0.2022071";
