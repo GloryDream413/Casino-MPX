@@ -1,0 +1,117 @@
+@tailwind base;
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #009f9d grey;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  /* background: grey; */
+  background: transparent;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  /* background-color: #009F9D; */
+  border-radius: 14px;
+  /* border: 3px solid grey; */
+  border: 3px solid transparent;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap");
+:root {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+html,
+body {
+  font-family: "Inter var", sans-serif;
+  overflow-x: hidden;
+  background-color: black;
+  background-image: radial-gradient(
+    50% 175.78% at 50% 0%,
+    rgb(0, 159, 157) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+h1,
+h2,
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.homeBtn {
+  align-items: center;
+  box-sizing: border-box;
+  background: linear-gradient(92.68deg, #009f9d -34.54%, #9ffdaf 67.2%);
+  border: 1px solid #0b140e;
+  box-shadow: -7px 7px 0px #0b140e;
+  border-radius: 50%;
+}
+
+.homeBtn:active {
+  background: linear-gradient(92.68deg, #009f9d -34.54%, #9ffdaf 67.2%);
+  box-shadow: 0px 3px 0px #0b140e;
+  transform: translateX(-7px);
+  transform: translateY(4px);
+}
+
+.connectBtn {
+  align-items: center;
+  box-sizing: border-box;
+  background: linear-gradient(92.68deg, #009f9d -34.54%, #9ffdaf 67.2%);
+  border: 1px solid #000000;
+  box-shadow: -7px 7px 0px #0b140e;
+  border-radius: 10px;
+}
+
+.connectBtn:active {
+  background: linear-gradient(92.68deg, #009f9d -34.54%, #9ffdaf 67.2%);
+  box-shadow: 0px 3px 0px #000000;
+  transform: translateX(-7px);
+  transform: translateY(4px);
+}
+
+.optionbutton {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 6px #bcc42a;
+}
+
+.optionbutton:hover {
+  background-color: #e8ad22;
+}
+
+.optionbutton:active {
+  background-color: #e8ad22;
+  box-shadow: 0 6px #dfe749;
+  transform: translateY(4px);
+}
+
+.selected {
+  background-color: #5cba14 !important;
+  box-shadow: 0 6px #dfe749 !important;
+}

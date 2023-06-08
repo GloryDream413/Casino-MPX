@@ -1,0 +1,85 @@
+.hashpack-connect-container {
+  background-color: rgb(0, 159, 157);
+  width: 296px;
+  height: fit-content;
+  border: 3px solid white;
+  padding: 20px 17px;
+  position: absolute !important;
+  right: 20px !important;
+  top: 20px !important;
+  left: auto !important;
+
+  .row {
+    margin: 0;
+  }
+
+  .modal-title {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+  }
+
+  .modal-mini-title {
+    color: lightcyan;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  .hashpack-connect-btn {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    background-color: rgb(0, 159, 157);
+
+    img {
+      width: 24px;
+    }
+
+    p {
+      margin: 0 0 0 10px;
+    }
+  }
+
+  .hashpack-connect-btn:hover {
+    background-color: rgb(0, 159, 157);
+  }
+
+  .pair-with-code-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .form-control {
+      height: 46px;
+      background-color: transparent;
+      color: white;
+      font-size: 14px;
+      border-radius: 0;
+      width: 200px;
+      border: 1px solid rgb(0, 159, 157);
+    }
+
+    .btn {
+      background-color: rgb(0, 159, 157);
+      width: 56px;
+      border-radius: 0;
+      padding: 0;
+      margin: 0;
+    }
+
+    .btn:hover {
+      background-color: rgb(0, 159, 157);
+    }
+
+    .warning-message {
+      color: white;
+      margin: 0;
+      font-weight: 500;
+    }
+  }
+}
