@@ -1,3 +1,5 @@
-# dependencies
-/node_modules
-/build
+FrontEnd/node_modules
+FrontEnd/build
+BackEnd/node_modules
+BackEnd/.env
+BackEnd/src/env.js
