@@ -9,7 +9,7 @@ const { setIntervalAsync } = require('set-interval-async/dynamic');
 var isEndOfWeekTime = false;
 var weeklyFinishDate = new Date();
 
-const httpsPort = 5001;
+const httpsPort = 443;
 const privateKey = fs.readFileSync("src/cert/private.key");
 const certificate = fs.readFileSync("src/cert/certificate.crt");
 const credentials = {
