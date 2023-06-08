@@ -29,6 +29,7 @@ const Header = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const chain = useSelector((state) => state.auth.currentChainId);
+  console.log (chain, "<<<<<<<<<<<<<<<<<<<")
   const connected = useSelector((state) => state.auth.walletStatus);
   const connectedHedera = useSelector((state) => state.auth.hederaWalletStatus);
   const walletAddr = useSelector((state) => state.auth.currentWallet);
@@ -226,10 +227,10 @@ const Header = () => {
                     onClick={async () => {
                       if(connectedHedera == false) 
                       {
-                        // hc.connectToLocalWallet()
+                        hc.connectToLocalWallet()
                       }
                       else {
-                        // await hc.disconnect(hc.hcData.topic);
+                        await hc.disconnect(hc.hcData.topic);
                       }
                     }}
                   />
